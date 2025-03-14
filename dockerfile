@@ -2,7 +2,7 @@
 FROM node:20.11
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Copy the .env and .env.development files
-COPY .env .env.development ./
+COPY .env ./
 
 # Creates a "dist" folder with the production build
 RUN npm run build
