@@ -1,0 +1,234 @@
+.runners-page {
+  padding: 20px 0;
+}
+
+.runners-list {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.filters {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filters select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  min-width: 200px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.empty-state p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.action-buttons, .race-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-edit, .btn-delete, .btn-start, .btn-lap, .btn-pause, .btn-resume, .btn-finish, .btn-diploma {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-edit {
+  background-color: #0066cc;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #0052a3;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #bd2130;
+}
+
+.btn-delete:disabled {
+  background-color: #f8a8b0;
+  cursor: not-allowed;
+}
+
+.btn-start {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-start:hover {
+  background-color: #218838;
+}
+
+.btn-lap {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.btn-lap:hover {
+  background-color: #e0a800;
+}
+
+.btn-pause {
+  background-color: #fd7e14;
+  color: white;
+}
+
+.btn-pause:hover {
+  background-color: #e36c0a;
+}
+
+.btn-resume {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.btn-resume:hover {
+  background-color: #138496;
+}
+
+.btn-finish {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.btn-finish:hover {
+  background-color: #5a32a3;
+}
+
+.btn-diploma {
+  background-color: #20c997;
+  color: white;
+}
+
+.btn-diploma:hover {
+  background-color: #1ba87e;
+}
+
+/* Runner status styling */
+.paused-runner {
+  background-color: #fff8e1; /* Light yellow */
+}
+
+.finished-runner {
+  background-color: #e8f5e9; /* Light green */
+}
+
+.running-time {
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #666;
+  font-weight: bold;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.badge-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.nickname {
+  font-style: italic;
+  margin-left: 5px;
+  color: #666;
+}
+
+.active-runner {
+  background-color: #f8f9fa;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.modal .warning {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
