@@ -157,3 +157,4 @@ class NfcService {
 }
 
 export default new NfcService();
+

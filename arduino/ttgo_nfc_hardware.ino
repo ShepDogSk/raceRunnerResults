@@ -422,3 +422,4 @@ void playErrorTone() {
   delay(250);
   tone(BUZZER_PIN, 300, 200);
 }
+

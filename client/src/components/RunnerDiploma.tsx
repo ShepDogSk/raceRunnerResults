@@ -121,3 +121,4 @@ const RunnerDiploma: React.FC<RunnerDiplomaProps> = ({
 };
 
 export default RunnerDiploma;
+

@@ -179,3 +179,4 @@ const NfcLogs: React.FC = () => {
 };
 
 export default NfcLogs;
+

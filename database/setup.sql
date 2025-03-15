@@ -103,3 +103,5 @@ CREATE TABLE IF NOT EXISTS user (
 -- Insert default admin user (password: admin)
 INSERT INTO user (username, password, role) 
 VALUES ('admin', '$2b$10$ywmIb8dLLWGYt7.Tn7VsAOTXuX.B1C8vKLVJJHKfG4.wLl.UlvKZe', 'admin');
+
+

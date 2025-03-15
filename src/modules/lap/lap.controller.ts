@@ -22,3 +22,4 @@ export class LapController {
     return this.lapService.findByRunner(runnerId);
   }
 }
+

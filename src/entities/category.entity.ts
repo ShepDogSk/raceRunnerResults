@@ -18,3 +18,4 @@ export class Category {
   @OneToMany(() => Runner, runner => runner.category)
   runners: Runner[];
 }
+

@@ -51,3 +51,4 @@ export class LapService {
     return laps[laps.length - 1];
   }
 }
+

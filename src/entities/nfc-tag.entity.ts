@@ -25,3 +25,4 @@ export class NfcTag {
   @Column({ default: true })
   isActive: boolean;
 }
+

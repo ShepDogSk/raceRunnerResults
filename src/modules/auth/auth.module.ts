@@ -48,3 +48,4 @@ const JWT_SECRET = 'secretKey';
   exports: [AuthService, JwtModule],
 })
 export class AuthModule {}
+

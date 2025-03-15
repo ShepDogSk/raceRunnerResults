@@ -58,3 +58,4 @@ export class NfcController {
     return this.nfcService.getAllLogs(limit);
   }
 }
+

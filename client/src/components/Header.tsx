@@ -57,3 +57,4 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated, onLogout }) => {
 };
 
 export default Header;
+

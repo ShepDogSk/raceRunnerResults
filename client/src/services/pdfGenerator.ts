@@ -161,3 +161,4 @@ const getPositionText = (position: number): string => {
 };
 
 export default DiplomaGenerator;
+

@@ -18,3 +18,4 @@ import { LapModule } from '../lap/lap.module';
   exports: [NfcService]
 })
 export class NfcModule {}
+

@@ -47,3 +47,4 @@ export class NfcLog {
   @Column({ nullable: true })
   errorMessage: string;
 }
+

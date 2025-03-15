@@ -6,3 +6,4 @@ export interface Category {
   description?: string;
   isActive?: boolean;
 }
+

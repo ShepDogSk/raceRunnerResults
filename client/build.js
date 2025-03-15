@@ -15,3 +15,4 @@ try {
   console.error('Error building client:', error);
   process.exit(1);
 }
+

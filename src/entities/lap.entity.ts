@@ -18,3 +18,4 @@ export class Lap {
   @Column()
   lapNumber: number;
 }
+

@@ -29,3 +29,4 @@ try {
   console.error('Error building server:', error);
   process.exit(1);
 }
+
