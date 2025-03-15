@@ -1,5 +1,5 @@
 # Base image
-FROM node:20.11
+FROM node:20.11 AS builder
 
 # Create app directory
 WORKDIR /app
@@ -15,17 +15,13 @@ COPY . .
 # Creates a "dist" folder with the production build
 RUN npm run build
 
-# COPY --from=builder /app/node_modules ./node_modules
-# COPY --from=builder /app/dist ./dist
-# COPY package.json .
+FROM node:20.11 AS runner
 
-# FROM node:20.11
+WORKDIR /app
 
-#WORKDIR /app
-
-# COPY --from=builder /app/node_modules ./node_modules
-# COPY --from=builder /app/dist ./dist
-# COPY package.json .
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/dist ./dist
+COPY package.json .
 
 CMD ["node", "dist/main"]
 
