@@ -3,8 +3,6 @@ services:
     build: .
     ports:
       - "3000:3000"
-    volumes:
-      - /volume1/docker/runApp:/app
     environment:
       NODE_ENV: production
     env_file:
